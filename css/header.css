@@ -1,0 +1,59 @@
+.header {
+    background-image: url("https://i.postimg.cc/9QVT4fvK/IMG-4513.jpg");
+    background-position: center;
+}
+
+.header--change {
+    background-image: url("https://i.postimg.cc/m27C2967/IMG-543.jpg");
+}
+
+.header__title {
+    color: rgb(238, 232, 232);
+    padding: 10px 10px;
+    text-shadow: 1px 2px 6px rgb(219, 129, 152);
+    margin-bottom: 5px;
+    margin-top: 0px;
+    background-color: black;
+}
+
+.Header__paragraph {
+    margin: 0px;
+}
+.header__ul {
+    padding-left: 0px;
+}
+
+.header__ul--line {
+    list-style-type: none;
+}
+
+.header__photo {
+    max-width: 200px;
+    border-radius: 50%;
+    width: 40%;
+}
+
+.header__ul--link {
+    border: 2px solid rgb(219, 129, 152);
+    color: rgb(238, 232, 232);
+    line-height: 2;
+    text-decoration: none;
+    padding: 2px 10px;
+    background-color: rgb(219, 129, 152);
+    text-align: center;
+    border-radius: 2px;
+    margin: 2px;
+}
+
+.header__button {
+    font-size: 15px;
+    width: 200px;
+}
+
+.header__ul--link:hover {
+    background-color: rgb(209, 87, 117);
+}
+
+.header__ul--link:active {
+    background-color: rgb(204, 59, 96);
+}

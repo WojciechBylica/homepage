@@ -1,0 +1,18 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0px auto;
+    max-width: 1000px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: rgb(8, 6, 6);
+    line-height: 1.5;
+    text-align: center;
+    background: content-box radial-gradient(#d3a0a000, rgba(117, 115, 115, 0.366));
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wojciech Bylica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title js-title">Wojciech Bylica</h1>
+
+        <nav>
+            <ul class="header__ul">
+                <li class="header__ul--line"> <a href="#oMnie" class="header__ul--link">o mnie</a></li>
+                <li class="header__ul--line"><a href="#aktualnaAktywność" class="header__ul--link">aktywność</a>
+                </li>
+                <li class="header__ul--line"><a href="#kontakt" class="header__ul--link">kontakt</a></li>
+                </li>
+            </ul>
+        </nav>
+        <img class="header__photo" src="https://i.postimg.cc/Zq5dcMYL/IMG-4516.jpg" alt="Wojciech Bylica">
+        <p class="Header__paragraph"><button class="header__ul--link header__button js-mgr">wyświetl tytuł
+                naukowy</button></p>
+        <p class="Header__paragraph"><button class="header__ul--link header__button js-button3">naciśnij aby zmienić
+                tło</button></p>
+    </header>
+
+    <main class="main" id="oMnie">
+
+        <h2 class="main__header">O mnie</h2>
+        <p class="main__paragraph">Perkusista, kompozytor, twórca o szerokich zainteresowaniach stylistycznych
+            Absolwent UMFC w Warszawie i PSJ im.
+            H. Majewskiego w Warszawie. Stypendysta Urbanator Days, laureat konkursu Roland V-Drums.</p>
+    </main>
+    <section class="section">
+        <h3 class="section__header">Współpraca z instytucjami:</h3>
+        <ul class="section__unorderedList">
+            <li class="section__unorderedList--item">TVN,</li>
+            <li class="section__unorderedList--item">Polsat,</li>
+            <li class="section__unorderedList--item">TVP,</li>
+            <li class="section__unorderedList--item">Fonografia Polskiego Radia,</li>
+            <li class="section__unorderedList--item">Teatr Rampa,</li>
+            <li class="section__unorderedList--item">Filharmonia Narodowa,</li>
+            <li class="section__unorderedList--item">Opera Narodowa.</li>
+        </ul>
+        <h3 class="section__header">Współpraca z artystami:</h3>
+        <ul class="section__unorderedList">
+            <li class="section__unorderedList--item">K.A.S.A,</li>
+            <li class="section__unorderedList--item">Ola Szwed,</li>
+            <li class="section__unorderedList--item">Marika,</li>
+            <li class="section__unorderedList--item">Zuza Jabłońska,</li>
+            <li class="section__unorderedList--item">Kancelarya.</li>
+
+        </ul>
+    </section>
+    <section class="section" id="aktualnaAktywność">
+        <h3 class="section__header">Aktualna aktywność</h3>
+        <ul class="section__unorderedList">
+            <li class="section__unorderedList--item">Perkusista <span
+                    class="section__unorderedList--importantText">Sienna Gospel Choir,</span></li>
+            <li class="section__unorderedList--item">Współzałożyciel zespołu <span
+                    class="section__unorderedList--importantText">SaturdayLive</span></li>
+            <li class="section__unorderedList--item">Nauczyciel perkusji w <span
+                    class="section__unorderedList--importantText">Szkole Gospel.</span></li>
+            <li class="section__unorderedList--item">Autor cyklu <span
+                    class="section__unorderedList--importantText"><em>Inspiracje perkusyjne</em></span>
+                dostępnego na
+                fb i yt.</li>
+        </ul>
+    </section>
+    <section class="section">
+        <h3 class="section__header">Galeria</h3>
+        <button class="section__link js-button">Naciśnij aby <span class="js-galleryButtonText">ukryć</span>
+            zdjęcia</button>
+        <div class="js-gallery">
+            <img class="section__gallery" src="https://i.postimg.cc/htrmVBnj/IMG-4514.jpg" alt="Sopot Top Of The Top">
+            <img class="section__gallery" src="https://i.postimg.cc/1z7NYrf1/IMG-4515.jpg"
+                alt="Zdjęcie z koncertów w Irlandii">
+
+        </div>
+    </section>
+    <section class="section">
+        <h2 class="section__header">Moje nagrania</h2>
+        <div class="section__container">
+            <table class="table">
+                <caption class="table__caption">
+                    Tabela wymienia moje niektóre nagrania studyjne
+                </caption>
+                <thead>
+                    <tr class="table__Row">
+                        <th class="table__Cell table__Cell--Header" scope="col">rok</th>
+                        <th class="table__Cell table__Cell--Header" scope="col">artysta/zespół</th>
+                        <th class="table__Cell table__Cell--Header" scope="col">tytuł</th>
+                        <th class="table__Cell table__Cell--Header" scope="col">Szczegóły</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr class="table__Row">
+                        <th class="table__Cell table__Cell--Header" scope="row">2008</th>
+                        <td class="table__Cell">Jazz Construction</td>
+                        <td class="table__Cell">Jazz Construction</td>
+                        <td class="table__Cell">debiutancki album / płyta CD</td>
+                    </tr>
+
+                    <tr class="table__Row">
+                        <th class="table__Cell table__Cell--Header" scope="row">2011</th>
+                        <td class="table__Cell">Natalia Sikora</td>
+                        <td class="table__Cell">Absurdustra-próba Norwida</td>
+                        <td class="table__Cell">debiutanck album / płyta CD</td>
+                    </tr>
+                    <tr class="table__Row">
+                        <th class="table__Cell table__Cell--Header" scope="row">2016</th>
+                        <td class="table__Cell">Sienna Gospel Choir</td>
+                        <td class="table__Cell">Kolędy</td>
+                        <td class="table__Cell">płyta CD</td>
+                    </tr>
+                    <tr class="table__Row">
+                        <th class="table__Cell table__Cell--Header" scope="row">2020</th>
+                        <td class="table__Cell">Iwona Manista-Kutryś</td>
+                        <td class="table__Cell">Smakuj życie</td>
+                        <td class="table__Cell">3 piosenki</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="table__Row">
+                        <th class="table__Cell table__Cell--Header" scope="row">2010-2021</th>
+                        <td class="table__Cell" colspan="3">I wiele wiele więcej</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </section>
+    <section class="section" id="kontakt">
+        <h2 class="section__header">Kontakt</h2>
+        <ul class="section__unorderedList">
+            <li class="section__unorderedList--item"><a href="mailto:wojciechbylicaarts@gmail.com"
+                    class="section__link">Naciśnij aby wysłać
+                    do mnie e-maila</a></li>
+            <li class="section__unorderedList--item"><a href="tel:+48608839887" class="section__link">Naciśnij aby do
+                    mnie
+                    zadzwonić </a></li>
+        </ul>
+
+    </section>
+    <footer class="footer">
+        <p class="footer__paragraph">All rights reserved.<br>
+            Designed by Wojciech Bylica Arts</p>
+    </footer>
+
+
+</body>
+
+</html>
