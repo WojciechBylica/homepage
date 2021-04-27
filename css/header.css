@@ -1,10 +1,10 @@
 .header {
-    background-image: url("https://i.postimg.cc/9QVT4fvK/IMG-4513.jpg");
+    background-image: url("../images/IMG-4513.JPG");
     background-position: center;
 }
 
 .header--change {
-    background-image: url("https://i.postimg.cc/m27C2967/IMG-543.jpg");
+    background-image: url("../images/IMG_543.jpg");
 }
 
 .header__title {
