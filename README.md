@@ -1,7 +1,18 @@
+
 # Wojciech Bylica
 
-![Wojciech Bylica](images/IMG-4516.JPG)
+![Wojciech Bylica](https://github.com/kynkyn-projects/homepage/blob/main/images/IMG-4516.JPG?raw=true?)
+## Demo
+[Homepage] [https://kynkyn-projects.github.io/homepage/](https://kynkyn-projects.github.io/homepage/)
 
-## DEMO
+ ### O mnie
+ - perkusista
+ - kompozytor
+ - twórca
+ - trener perkusji
+####  Zainteresowania
+- Frondend
+- Windsurfing
 
-https://kynkyn-projects.github.io/homepage/
+#### kontakt:
+wojtekbyl@gmail.com
