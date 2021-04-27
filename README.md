@@ -1,6 +1,6 @@
 # Wojciech Bylica
 
-![Wojciech Bylica](images/IMG-4515.JPG)
+![Wojciech Bylica](images/IMG-4516.JPG)
 
 ## DEMO
 
