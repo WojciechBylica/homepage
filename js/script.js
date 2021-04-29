@@ -11,12 +11,12 @@
         mgr.innerText = mgr.innerText === "wyświetl tytuł naukowy" ? "ukryj tytuł naukowy" : "wyświetl tytuł naukowy";
     };
 
-    const ArtsDegree = () => {
+    const artsDegree = () => {
         const mgr = document.querySelector(".js-mgr");
         mgr.addEventListener("click", toggleMastersOfArtsTitle);
     }
 
-    ArtsDegree();
+    artsDegree();
 
     const toggleBackground = () => {
         const gallery = document.querySelector(".js-gallery");
