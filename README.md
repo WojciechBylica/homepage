@@ -18,7 +18,7 @@
 - Frondend
 - Windsurfing
 
-## Technologys used in page:
+## Technology used in page:
 - html
 - BEM
 - ES6+
