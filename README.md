@@ -19,7 +19,7 @@ https://wojciechbylica.github.io/homepage/
 - Frondend
 - Windsurfing
 
-## Technology used in page:
+## Technology used on page:
 - html
 - BEM
 - ES6+
