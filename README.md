@@ -15,7 +15,7 @@ https://wojciechbylica.github.io/homepage/
  - art creator
  - drum teacher
 
-####  Interests:
+##  Interests:
 - Frondend
 - Windsurfing
 
@@ -24,5 +24,5 @@ https://wojciechbylica.github.io/homepage/
 - BEM
 - ES6+
 
-#### Contact:
+### Contact:
 wojtekbyl@gmail.com
