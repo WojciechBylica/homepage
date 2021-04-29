@@ -1,27 +1,48 @@
-console.log("Hello!");
+{
+    const welcome = () => {
+        console.log("Hello!");
+    };
 
-let mgr = document.querySelector(".js-mgr");
-let title = document.querySelector(".js-title");
+    welcome();
 
-mgr.addEventListener("click", () => {
-    title.innerText = title.innerText === "Wojciech Bylica" ? "mgr Wojciech Bylica" : "Wojciech Bylica";
+    const toggleMastersOfArtsTitle = () => {
+        const title = document.querySelector(".js-title");
+        title.innerText = title.innerText === "Wojciech Bylica" ? "mgr Wojciech Bylica" : "Wojciech Bylica";
+        mgr.innerText = mgr.innerText === "wyświetl tytuł naukowy" ? "ukryj tytuł naukowy" : "wyświetl tytuł naukowy";
+    };
 
-    mgr.innerText = mgr.innerText === "wyświetl tytuł naukowy" ? "ukryj tytuł naukowy" : "wyświetl tytuł naukowy";
-})
+    const ArtsDegree = () => {
+        const mgr = document.querySelector(".js-mgr");
+        mgr.addEventListener("click", toggleMastersOfArtsTitle);
+    }
 
-let button = document.querySelector(".js-button");
-let gallery = document.querySelector(".js-gallery");
-let galleryButtonText = document.querySelector(".js-galleryButtonText");
+    ArtsDegree();
 
-button.addEventListener("click", () => {
-    gallery.classList.toggle("section__gallery--hidden");
+    const toggleBackground = () => {
+        const gallery = document.querySelector(".js-gallery");
+        const galleryButtonText = document.querySelector(".js-galleryButtonText");
+        gallery.classList.toggle("section__gallery--hidden");
+        galleryButtonText.innerText = gallery.classList.contains("section__gallery--hidden") ? "wyświetlić" : "ukryć";
+    }
 
-    galleryButtonText.innerText = gallery.classList.contains("section__gallery--hidden") ? "wyświetlić" : "ukryć";
-})
+    const backGround = () => {
+        const button = document.querySelector(".js-button");
+        button.addEventListener("click", toggleBackground);
 
-let button3 = document.querySelector(".js-button3");
-let tlo1 = document.querySelector(".header");
 
-button3.addEventListener("click", () => {
-    tlo1.classList.toggle("header--change")
-})
+    }
+
+    backGround();
+
+    const toggleGalleryApperance = () => {
+        const tlo1 = document.querySelector(".header");
+        tlo1.classList.toggle("header--change")
+    }
+
+    const gallery = () => {
+        const button3 = document.querySelector(".js-button3");
+        button3.addEventListener("click", toggleGalleryApperance);
+    }
+
+    gallery();
+}
