@@ -2,17 +2,26 @@
 # Wojciech Bylica
 
 ![Wojciech Bylica](https://github.com/kynkyn-projects/homepage/blob/main/images/IMG-4516.JPG?raw=true?)
-## Demo
-[Homepage] [https://kynkyn-projects.github.io/homepage/](https://kynkyn-projects.github.io/homepage/)
+## Link:
+[Homepage](https://wojciechbylica.github.io/homepage/)
 
- ### O mnie
- - perkusista
- - kompozytor
- - twórca
- - trener perkusji
-####  Zainteresowania
+## preview:
+
+ ### About Me:
+ - drummer
+ - percussionist
+ - composer
+ - art creator
+ - drum teacher
+
+####  Interests:
 - Frondend
 - Windsurfing
 
-#### kontakt:
+## Technologys used in page:
+- html
+- BEM
+- ES6+
+
+#### Contact:
 wojtekbyl@gmail.com
