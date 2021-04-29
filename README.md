@@ -1,14 +1,13 @@
 
 # Wojciech Bylica
-
-![Wojciech Bylica](https://github.com/kynkyn-projects/homepage/blob/main/images/IMG-4516.JPG?raw=true?)
+My homepage.
 ## Link:
 [Homepage](https://wojciechbylica.github.io/homepage/)
 ## URL:
 https://wojciechbylica.github.io/homepage/
 
 ## preview:
-
+![Page preview](images/homepagePreviewVer1.gif)
  ### About Me:
  - drummer
  - percussionist
