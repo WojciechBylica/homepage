@@ -6,7 +6,6 @@
     const artsDegree = () => {
         const title = document.querySelector(".js-title");
         title.innerText = title.innerText === "Wojciech Bylica" ? "mgr Wojciech Bylica" : "Wojciech Bylica";
-        mgr.innerText = mgr.innerText === "wyświetl tytuł naukowy" ? "ukryj tytuł naukowy" : "wyświetl tytuł naukowy";
     };
 
 
@@ -34,6 +33,7 @@
 
         const mgr = document.querySelector(".js-mgr");
         mgr.addEventListener("click", artsDegree);
+        mgr.innerText = mgr.innerText === "wyświetl tytuł naukowy" ? "ukryj tytuł naukowy" : "wyświetl tytuł naukowy";
     }
 
     init();

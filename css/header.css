@@ -21,6 +21,8 @@
 }
 .header__ul {
     padding-left: 0px;
+    display: flex;
+    justify-content: center;
 }
 
 .header__ul--line {
