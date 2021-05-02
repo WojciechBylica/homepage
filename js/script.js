@@ -5,7 +5,7 @@
 
     const artsDegree = () => {
         const title = document.querySelector(".js-title");
-        title.innerText = title.innerText === "Wojciech Bylica" ? "buttonMasterOfArts Wojciech Bylica" : "Wojciech Bylica";
+        title.innerText = title.innerText === "Wojciech Bylica" ? "mgr Wojciech Bylica" : "Wojciech Bylica";
     };
 
 
