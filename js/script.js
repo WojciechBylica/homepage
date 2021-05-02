@@ -3,9 +3,9 @@
         console.log("Hello!");
     };
 
-    const artsDegree = (mgr, title) => {
+    const artsDegree = (showMasterOfArts, title) => {
 
-        mgr.innerText = mgr.innerText === "wyświetl tytuł naukowy" ? "ukryj tytuł naukowy" : "wyświetl tytuł naukowy";
+        showMasterOfArts.innerText = showMasterOfArts.innerText === "wyświetl tytuł naukowy" ? "ukryj tytuł naukowy" : "wyświetl tytuł naukowy";
         title.innerText = title.innerText === "Wojciech Bylica" ? "mgr Wojciech Bylica" : "Wojciech Bylica";
     };
 
@@ -32,11 +32,10 @@
         const button = document.querySelector(".js-button");
         button.addEventListener("click", backGround);
 
-        const mgr = document.querySelector(".js-mgr");
-
-        mgr.addEventListener("click", () => {
+        const showMasterOfArts = document.querySelector(".js-showMasterOfArts");
+        showMasterOfArts.addEventListener("click", () => {
             const title = document.querySelector(".js-title");
-            artsDegree(mgr, title)
+            artsDegree(showMasterOfArts, title)
         });
 
     }
