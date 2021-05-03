@@ -5,9 +5,10 @@
 
     const showArtsDegree = (masterOfArts) => {
         const title = document.querySelector(".js-title");
-        masterOfArts.classList.toggle("js-changeTitle");
-        masterOfArts.innerText = masterOfArts.classList.contains("js-changeTitle") ? "ukryj tytuł naukowy" : "wyświetl tytuł naukowy";
-        title.innerText = masterOfArts.classList.contains("js-changeTitle") ? "mgr Wojciech Bylica" : "Wojciech Bylica";
+        masterOfArts.classList.toggle("changeTitle");
+        const masterOfArtsShowed = masterOfArts.classList.contains("changeTitle")
+        masterOfArts.innerText = masterOfArtsShowed ? "ukryj tytuł naukowy" : "wyświetl tytuł naukowy";
+        title.innerText = masterOfArtsShowed ? "mgr Wojciech Bylica" : "Wojciech Bylica";
     };
 
 
