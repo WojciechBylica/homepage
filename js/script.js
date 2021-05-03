@@ -3,14 +3,15 @@
         console.log("Hello!");
     };
 
-    const artsDegree = (showMasterOfArts, title) => {
-
-        showMasterOfArts.innerText = showMasterOfArts.innerText === "wyświetl tytuł naukowy" ? "ukryj tytuł naukowy" : "wyświetl tytuł naukowy";
-        title.innerText = title.innerText === "Wojciech Bylica" ? "mgr Wojciech Bylica" : "Wojciech Bylica";
+    const showArtsDegree = (masterOfArts) => {
+        const title = document.querySelector(".js-title");
+        masterOfArts.classList.toggle("js-changeTitle");
+        masterOfArts.innerText = masterOfArts.classList.contains("js-changeTitle") ? "ukryj tytuł naukowy" : "wyświetl tytuł naukowy";
+        title.innerText = masterOfArts.classList.contains("js-changeTitle") ? "mgr Wojciech Bylica" : "Wojciech Bylica";
     };
 
 
-    const backGround = () => {
+    const changeBackground = () => {
         const galleryButtonText = document.querySelector(".js-galleryButtonText");
         const gallery = document.querySelector(".js-gallery");
         gallery.classList.toggle("section__gallery--hidden");
@@ -18,7 +19,7 @@
     };
 
 
-    const gallery = () => {
+    const changeVisibilityOfGallery = () => {
         const header = document.querySelector(".header");
         header.classList.toggle("header--change");
     }
@@ -27,15 +28,15 @@
         welcome();
 
         const buttonBackgroundChange = document.querySelector(".js-buttonBackgroundChange");
-        buttonBackgroundChange.addEventListener("click", gallery);
+        buttonBackgroundChange.addEventListener("click", changeVisibilityOfGallery);
 
         const button = document.querySelector(".js-button");
-        button.addEventListener("click", backGround);
+        button.addEventListener("click", changeBackground);
 
-        const showMasterOfArts = document.querySelector(".js-showMasterOfArts");
-        showMasterOfArts.addEventListener("click", () => {
-            const title = document.querySelector(".js-title");
-            artsDegree(showMasterOfArts, title)
+        const masterOfArts = document.querySelector(".js-showMasterOfArts");
+        masterOfArts.addEventListener("click", () => {
+
+            showArtsDegree(masterOfArts)
         });
 
     }
