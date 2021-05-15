@@ -24,19 +24,10 @@ html {
 }
 
 .container {
-    background: url("../images/IMG_0125.jpeg") no-repeat center center;
-    background-size: cover;
- }
- 
- .no-touch .container {
-    background-attachment:fixed;
- }
-
-/* .container {
     background-image: url("../images/IMG_0125.jpeg");
     background-position: center;
     background-attachment: fixed;
-} */
+}
 .container--change {
 
     background-image: url("../images/IMG_543.jpg");
