@@ -40,9 +40,9 @@
     const changeSizeOfGallery = () => {
         const photos = document.querySelectorAll(".section__gallery");
         photos.forEach((photo) => {
-            photo.classList.toggle("section__gallery--big");
+            photo.classList.toggle("section__gallery--small");
             const gallerySizeButtonText = document.querySelector(".js-gallerySizeButtonText");
-            gallerySizeButtonText.innerText = photo.classList.contains("section__gallery--big") ? "pomniejsz" : "powiększ";
+            gallerySizeButtonText.innerText = photo.classList.contains("section__gallery--small") ? "powiększ" : "pomniejsz";
         });
     }
 
@@ -72,6 +72,7 @@
 
         document.querySelector(".js-gallery").innerHTML = htmlString;
         index++;
+        changeSizeOfGallery()
     };
 
     init = () => {

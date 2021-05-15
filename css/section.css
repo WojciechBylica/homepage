@@ -45,12 +45,12 @@
 }
 
 .section__gallery {
-    width: 50%;
+    width: 100%;
     padding: 20px 0px;
 }
 
-.section__gallery--big {
-    width: 100%;
+.section__gallery--small {
+    width: 50%;
 }
 
 .section__gallery--hidden {
