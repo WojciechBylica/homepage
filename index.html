@@ -16,6 +16,7 @@
         rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/header.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/section.css" rel="stylesheet">
     <link href="css/table.css" rel="stylesheet">
@@ -26,147 +27,322 @@
         rel="stylesheet">
 </head>
 
-<body>
-    <header class="header">
-        <h1 class="header__title js-title">Wojciech Bylica</h1>
+<body class="body">
+    <div class="container">
+        <header class="header">
+            <h1  class="js-title">Wojciech Bylica</h1>
 
-        <nav>
-            <ul class="header__ul">
-                <li class="header__ul--line"> <a href="#oMnie" class="header__ul--link">o mnie</a></li>
-                <li class="header__ul--line"><a href="#aktualnaAktywność" class="header__ul--link">aktywność</a>
-                </li>
-                <li class="header__ul--line"><a href="#kontakt" class="header__ul--link">kontakt</a></li>
-                </li>
-            </ul>
-        </nav>
-        <img class="header__photo" src="images/IMG-4516.JPG" alt="Wojciech Bylica">
-        <p class="header__paragraph"><button class="header__button js-showMasterOfArts">wyświetl tytuł
-                naukowy</button></p>
-        <p class="header__paragraph"><button class="header__button js-buttonBackgroundChange">naciśnij aby zmienić
-                tło</button></p>
-    </header>
+            <nav class="navigation">
+                <!-- <img class="navigation__photo" src="images/IMG_4024.jpeg" alt="Wojciech Bylica"> -->
+                <ul class="navigation__ul">
+                    <li class="navigation__item"> <a href="#oMnie" class="navigation__ul--link">o mnie</a></li>
+                    <li class="navigation__item"><a href="#aktualnaAktywność" class="navigation__ul--link">aktywność</a>
+                    </li>
+                    <li class="navigation__item"><a href="#kontakt" class="navigation__ul--link">kontakt</a></li>
+                    <li class="navigation__item"><button class="navigation__button js-showMasterOfArts">tytuł
+                            naukowy</button></li>
+                    <li class="navigation__item"><button class="navigation__button js-buttonBackgroundChange">zmień
+                            tło</button>
+                    </li>
+                </ul>
+               
+               
+            </nav>
+        </header>
 
-    <main class="main" id="oMnie">
+        <main class="main" >
+            
+            <article class="main__article">
+                <!-- <h2 class="main__header">O mnie</h2> -->
+                <img class="main__photo" src="images/wojtekbylicazespół5.jpeg" alt="Wojciech Bylica">
+                <p class="main__paragraph" id="oMnie">Perkusista, kompozytor, twórca o szerokich zainteresowaniach
+                    stylistycznych
+                    Absolwent UMFC w Warszawie i PSJ im.
+                    H. Majewskiego w Warszawie. Stypendysta Urbanator Days, laureat konkursu Roland V-Drums.</p>
+            </article>
+            <section class="section section--first">
+                <div>
+                    <h3 class="section__header">Współpraca z instytucjami:</h3>
+                    <ul class="section__unorderedList">
+                        <li class="section__unorederedListItem">TVN</li>
+                        <li class="section__unorederedListItem">Polsat</li>
+                        <li class="section__unorederedListItem">TVP</li>
+                        <li class="section__unorederedListItem">Fonografia Polskiego Radia</li>
+                        <li class="section__unorederedListItem">Teatr Rampa</li>
+                        <li class="section__unorederedListItem">Mazowiecki Teatr Muzyczny im. J. Kiepury</li>
+                        <li class="section__unorederedListItem">Teatr Polski w Warszawie</li>
+                        <li class="section__unorederedListItem">Teatr Baj</li>
+                        <li class="section__unorederedListItem">Filharmonia Narodowa</li>
+                        <li class="section__unorederedListItem">Sinfonia Varsovia</li>
+                        <li class="section__unorederedListItem">Sinfonia Iuventus</li>
+                        <li class="section__unorederedListItem">Opera Narodowa</li>
+                        <li class="section__unorederedListItem">Polska Opera Królewska</li>
+                        <li class="section__unorederedListItem">Warszawska Opera Kameralna</li>
+                        <li class="section__unorederedListItem">PZPiT Mazowsze</li>
+                        <li class="section__unorederedListItem">ZPiT Warszawianka</li>
+                    </ul>
+                </div>
 
-        <h2 class="main__header">O mnie</h2>
-        <p class="main__paragraph">Perkusista, kompozytor, twórca o szerokich zainteresowaniach stylistycznych
-            Absolwent UMFC w Warszawie i PSJ im.
-            H. Majewskiego w Warszawie. Stypendysta Urbanator Days, laureat konkursu Roland V-Drums.</p>
-    </main>
-    <section class="section">
-        <h3 class="section__header">Współpraca z instytucjami:</h3>
-        <ul class="section__unorderedList">
-            <li class="section__unorederedListItem">TVN,</li>
-            <li class="section__unorederedListItem">Polsat,</li>
-            <li class="section__unorederedListItem">TVP,</li>
-            <li class="section__unorederedListItem">Fonografia Polskiego Radia,</li>
-            <li class="section__unorederedListItem">Teatr Rampa,</li>
-            <li class="section__unorederedListItem">Filharmonia Narodowa,</li>
-            <li class="section__unorederedListItem">Opera Narodowa.</li>
-        </ul>
-        <h3 class="section__header">Współpraca z artystami:</h3>
-        <ul class="section__unorderedList">
-            <li class="section__unorederedListItem">K.A.S.A,</li>
-            <li class="section__unorederedListItem">Ola Szwed,</li>
-            <li class="section__unorederedListItem">Marika,</li>
-            <li class="section__unorederedListItem">Zuza Jabłońska,</li>
-            <li class="section__unorederedListItem">Kancelarya.</li>
+                <div>
+                    <h3 class="section__header">Wykształcenie</h3>
+                    <ul class="section__unorderedList">
+                        <li class="section__unorederedListItem">UMFC - magister sztuki</li>
+                        <li class="section__unorederedListItem">PSJ im. H. Majewskiego w Warszawie</li>
+                        <li class="section__unorederedListItem">POSM II st. im. F. Chopina w Krakowie</li>
+                        <li class="section__unorederedListItem">POSM I st. im. I. J. Paderewskiego w Krakowie</li>
+                    </ul>
+                    <h3 class="section__header">Rozwój</h3>
+                    <ul class="section__unorderedList">
+                        <li class="section__unorederedListItem">stypenium Urbantor Days - Białystok</li>
+                        <li class="section__unorederedListItem">3 miejsce Roland V-Drums Competition - Poznań</li>
+                    </ul>
+                    <h3 class="section__header">Kursy, lekcje i kliniki perkusyjne</h3>
+                    <ul class="section__unorderedList">
+                        <li class="section__unorederedListItem">Dom Famularo</li>
+                        <li class="section__unorederedListItem">Brian "Frasier" Moore</li>
+                        <li class="section__unorederedListItem">Derrick Mckenzie</li>
+                        <li class="section__unorederedListItem">Dave Weckl</li>
+                        <li class="section__unorederedListItem">Eric Moore</li>
+                    </ul>
+                </div>
 
-        </ul>
-    </section>
-    <section class="section" id="aktualnaAktywność">
-        <h3 class="section__header">Aktualna aktywność</h3>
-        <ul class="section__unorderedList">
-            <li class="section__unorederedListItem">Perkusista <span
-                    class="section__unorderedList--importantText">Sienna Gospel Choir,</span></li>
-            <li class="section__unorederedListItem">Współzałożyciel zespołu <span
-                    class="section__unorderedList--importantText">SaturdayLive</span></li>
-            <li class="section__unorederedListItem">Nauczyciel perkusji w <span
-                    class="section__unorderedList--importantText">Szkole Gospel.</span></li>
-            <li class="section__unorederedListItem">Autor cyklu <span
-                    class="section__unorderedList--importantText"><em>Inspiracje perkusyjne</em></span>
-                dostępnego na
-                fb i yt.</li>
-        </ul>
-    </section>
-    <section class="section">
-        <h3 class="section__header">Galeria</h3>
-        <button class="section__link js-button">Naciśnij aby <span class="js-galleryButtonText">ukryć</span>
-            zdjęcia</button>
-        <div class="js-gallery">
-            <img class="section__gallery" src="images/IMG-4514.JPG" alt="Sopot Top Of The Top">
-            <img class="section__gallery" src="images/IMG-4515.JPG" alt="Zdjęcie z koncertów w Irlandii">
+                <div>
+                    <h3 class="section__header">Współpraca z artystami, zespołami:</h3>
+                    <ul class="section__unorderedList">
+                        <li class="section__unorederedListItem">K.A.S.A</li>
+                        <li class="section__unorederedListItem">Ola Szwed</li>
+                        <li class="section__unorederedListItem">Marika</li>
+                        <li class="section__unorederedListItem">Zuza Jabłońska</li>
+                        <li class="section__unorederedListItem">Kancelarya</li>
+                        <li class="section__unorederedListItem">Wiarygodni</li>
+                        <li class="section__unorederedListItem">Kancelarya</li>
+                        <li class="section__unorederedListItem">Sienna Gospel Choir</li>
+                        <li class="section__unorederedListItem">Sienna Singers</li>
+                        <li class="section__unorederedListItem">Odette</li>
+                        <li class="section__unorederedListItem">Niko</li>
+                        <li class="section__unorederedListItem">Wiesław Tupaczewski</li>
+                        <li class="section__unorederedListItem">Natalia Sikora</li>
+                        <li class="section__unorederedListItem">Malwina Kusior</li>
+                        <li class="section__unorederedListItem">Jazz Construction</li>
+                        <li class="section__unorederedListItem">Brass Federacja</li>
+                        <li class="section__unorederedListItem">Michał Szczerbiec</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section" id="aktualnaAktywność">
+                <h3 class="section__header">Aktywność</h3>
+                <ul class="section__unorderedList">
+                    <li class="section__unorederedListItem">Perkusista <span
+                            class="section__unorderedList--importantText">Sienna Gospel Choir,</span></li>
+                    <li class="section__unorederedListItem">Współzałożyciel zespołu <span
+                            class="section__unorderedList--importantText">SaturdayLive</span></li>
+                    <li class="section__unorederedListItem">Nauczyciel perkusji w <span
+                            class="section__unorderedList--importantText">Szkole Gospel.</span></li>
+                    <li class="section__unorederedListItem">Autor cyklu <span
+                            class="section__unorderedList--importantText"><em>Inspiracje perkusyjne</em></span>
+                        dostępnego na
+                        fb i yt.</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h3 class="section__header">Twórczość i kompozycje</h3>
+                <div class="section__div">
+                    <div>
+                        <p class="section__header section__header--div">Rising Sun</p>
+                        <p class="section__paragraph"> Rising Sun to kompozycja którą napisałem w 2021r. i wykonałem
+                            podczas turnieju KokoroCup. Usłyszysz
+                            w
+                            niej rzadko spotykany w naszym regionie japoński bęben taiko, a w tle akompaniament
+                            samplera.
+                            Całość
+                            utrzymana jest w lekkim, rozrywkowym charakterze</p>
+                    </div>
+                    <iframe class="section__video" src="https://www.youtube.com/embed/cJ03nm5Bn1Q"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
 
-        </div>
-    </section>
-    <section class="section">
-        <h2 class="section__header">Moje nagrania</h2>
-        <div class="section__container">
-            <table class="table">
-                <caption class="table__caption">
-                    Tabela wymienia moje niektóre nagrania studyjne
-                </caption>
-                <thead>
-                    <tr class="table__Row">
-                        <th class="table__cell table__cell--Header" scope="col">rok</th>
-                        <th class="table__cell table__cell--Header" scope="col">artysta/zespół</th>
-                        <th class="table__cell table__cell--Header" scope="col">tytuł</th>
-                        <th class="table__cell table__cell--Header" scope="col">Szczegóły</th>
-                    </tr>
-                </thead>
-                <tbody>
+                <div class="section__div">
+                    <div>
+                        <p class="section__header section__header--div">Inspiracje perkusyjne</p>
+                        <p class="section__paragraph"> Inspiracje perkusyjne to cykl 8 filmów nagranych w ramach
+                            stypendium
+                            Mobilni w kulturze. Każdy film zawiera omówienie wybranego stylu muzycznego, nuty do
+                            pobrania,
+                            oraz
+                            kompozycję - inspirację do ćwiczenia. W linku playlista złożona z filmów Inspiracje
+                            perkusyjne.
+                        </p>
+                    </div>
+                    <iframe class="section__video" src="https://www.youtube.com/embed/4bbNzHAigBA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+            <section class="section">
+                <h3 class="section__header">Nagrania - video z Youtube</h3>
+                <div class="section__div">
+                    <div>
+                        <p class="section__header section__header--div">Sienna Gospel Choir</p>
+                        <p class="section__paragraph"> Moja współpraca z Sienna Gospel Choir trwa od wielu lat.
+                            Uwielbiam muzykę gospel - jej emocje, dobrą energię i przestrzeń którą stwarza do wypowiedzi
+                            artystycznej. W linku jedna z piosenek zarejestrowana podczas koncertu w 2019 roku.</p>
+                    </div>
+                    <iframe class="section__video" src="https://www.youtube.com/embed/HwHuseJ8jhY"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="section__div">
+                    <div>
+                        <p class="section__header section__header--div">Jazz Construction</p>
+                        <p class="section__paragraph"> Jazz Construction był zespołem z którym przeszedłem cały okres
+                            studiów muzycznych. Nagraliśmy płytę, jeździliśmy na przeglądy zespołów jazzowych i graliśmy
+                            koncerty w klubie Tygmont. W linku jedna z piosenek naszej płyty.</p>
+                    </div>
+                    <iframe class="section__video" src="https://www.youtube.com/embed/4E-2uTs-unw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
 
-                    <tr class="table__Row">
-                        <th class="table__cell table__cell--Header" scope="row">2008</th>
-                        <td class="table__cell">Jazz Construction</td>
-                        <td class="table__cell">Jazz Construction</td>
-                        <td class="table__cell">debiutancki album / płyta CD</td>
-                    </tr>
+                <div class="section__div">
+                    <div>
+                        <p class="section__header section__header--div">Kancelarya</p>
+                        <p class="section__paragraph"> "Zabiorę Cię właśnie tam" to wielki przebój zespołu Kancelarya.
+                            Miałem przyjemność nagrać perkusję w odświeżonej wersji piosenki. W tej wersji wykonaliśmy
+                            "Zabiorę
+                            Cię własnie tam" na festiwalu Sopot Top Trendy -telewizja Polsat.</p>
+                    </div>
+                    <iframe class="section__video" src="https://www.youtube.com/embed/Uqz0n_MudRE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
 
-                    <tr class="table__Row">
-                        <th class="table__cell table__cell--Header" scope="row">2011</th>
-                        <td class="table__cell">Natalia Sikora</td>
-                        <td class="table__cell">Absurdustra-próba Norwida</td>
-                        <td class="table__cell">debiutanck album / płyta CD</td>
-                    </tr>
-                    <tr class="table__Row">
-                        <th class="table__cell table__cell--Header" scope="row">2016</th>
-                        <td class="table__cell">Sienna Gospel Choir</td>
-                        <td class="table__cell">Kolędy</td>
-                        <td class="table__cell">płyta CD</td>
-                    </tr>
-                    <tr class="table__Row">
-                        <th class="table__cell table__cell--Header" scope="row">2020</th>
-                        <td class="table__cell">Iwona Manista-Kutryś</td>
-                        <td class="table__cell">Smakuj życie</td>
-                        <td class="table__cell">3 piosenki</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                    <tr class="table__Row">
-                        <th class="table__cell table__cell--Header" scope="row">2010-2021</th>
-                        <td class="table__cell" colspan="3">I wiele wiele więcej</td>
-                    </tr>
-                </tfoot>
-            </table>
-        </div>
-    </section>
-    <section class="section" id="kontakt">
-        <h2 class="section__header">Kontakt</h2>
-        <ul class="section__unorderedList">
-            <li class="section__unorederedListItem"><a href="mailto:wojciechbylicaarts@gmail.com"
-                    class="section__link">Naciśnij aby wysłać
-                    do mnie e-maila</a></li>
-            <li class="section__unorederedListItem"><a href="tel:+48608839887" class="section__link">Naciśnij aby do mnie zadzwonić </a></li>
-        </ul>
+                <div class="section__div">
+                    <div>
+                        <p class="section__header section__header--div">SaturdayLive</p>
+                        <p class="section__paragraph"> Jeśli grać covery to tylko w dobrym towarzystwie. No i koniecznie
+                            dobre piosenki - co oczywiście jest kwestią gustu, ale bardzo lubię naszą wersję "Proud
+                            Mary".
+                        </p>
+                    </div>
+                    <iframe class="section__video" src="https://www.youtube.com/embed/sLoFYoqpJFU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
 
-    </section>
-    <footer class="footer">
-        <p class="footer__paragraph">All rights reserved.<br>
-            Designed by Wojciech Bylica Arts</p>
-    </footer>
+                <div class="section__div">
+                    <div>
+                        <p class="section__header section__header--div">Wiarygodni</p>
+                        <p class="section__paragraph"> Z zespołem Wiarygodni miałem przyjemność zagrać kilka wielkich
+                            koncertów, a kulminacją mojej aktywności w tej formacji były Światowe Dni Młodzieży i
+                            dziesięć
+                            tysięcy słuchaczy przed nami!</p>
+                    </div>
+                    <iframe class="section__video" src="https://www.youtube.com/embed/HZcaS83G_3U"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
 
+                <div class="section__div">
+                    <div>
+                        <p class="section__header section__header--div">Drum Channel</p>
+                        <p class="section__paragraph">Z okazji epidemii COVID zacząłem budować kanał YouTube. Wrzucam na
+                            niego filmy o szeroko rozumianej tematyce perkusyjnej.
+                        </p>
+                    </div>
+                    <iframe class="section__video" src="https://www.youtube.com/embed/qmHHL8BenGk"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
 
+            </section>
+            <section class="section">
+                <h3 class="section__header">Galeria</h3>
+                <button class="section__link js-button">Naciśnij aby <span class="js-galleryButtonText">ukryć</span>
+                    zdjęcia</button>
+                <div class="js-gallery">
+                    <img class="section__gallery" src="images/IMG-4514.JPG" alt="Sopot Top Of The Top">
+                    <img class="section__gallery" src="images/IMG-4515.JPG" alt="Zdjęcie z koncertów w Irlandii">
+
+                </div>
+            </section>
+            <section class="section">
+                <h2 class="section__header">Moje nagrania</h2>
+                <div class="section__container">
+                    <table class="table">
+                        <caption class="table__caption">
+                            Tabela wymienia moje niektóre nagrania studyjne
+                        </caption>
+                        <thead>
+                            <tr class="table__row">
+                                <th class="table__cell table__cell--header" scope="col">rok</th>
+                                <th class="table__cell table__cell--header" scope="col">artysta/zespół</th>
+                                <th class="table__cell table__cell--header" scope="col">tytuł</th>
+                                <th class="table__cell table__cell--header" scope="col">Szczegóły</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr class="table__row">
+                                <th class="table__cell table__cell--header" scope="row">2008</th>
+                                <td class="table__cell">Jazz Construction</td>
+                                <td class="table__cell">Jazz Construction</td>
+                                <td class="table__cell">debiutancki album / płyta CD</td>
+                            </tr>
+
+                            <tr class="table__row">
+                                <th class="table__cell table__cell--header" scope="row">2011</th>
+                                <td class="table__cell">Natalia Sikora</td>
+                                <td class="table__cell">Absurdustra-próba Norwida</td>
+                                <td class="table__cell">debiutanck album / płyta CD</td>
+                            </tr>
+                            <tr class="table__row">
+                                <th class="table__cell table__cell--header" scope="row">2016</th>
+                                <td class="table__cell">Sienna Gospel Choir</td>
+                                <td class="table__cell">Kolędy</td>
+                                <td class="table__cell">płyta CD</td>
+                            </tr>
+                            <tr class="table__row">
+                                <th class="table__cell table__cell--header" scope="row">2020</th>
+                                <td class="table__cell">Iwona Manista-Kutryś</td>
+                                <td class="table__cell">Smakuj życie</td>
+                                <td class="table__cell">3 piosenki</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="table__row">
+                                <th class="table__cell table__cell--header" scope="row">2010-2021</th>
+                                <td class="table__cell" colspan="3">I wiele wiele więcej</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </section>
+            <section class="section" id="kontakt">
+                <h2 class="section__header">Kontakt</h2>
+                <div class="section__div">
+                    <a href="mailto:wojciechbylicaarts@gmail.com" class="section__link">Naciśnij aby wysłać
+                        do mnie e-maila</a></li>
+                    <a href="tel:+48608839887" class="section__link">Naciśnij aby do
+                        mnie zadzwonić </a></li>
+                </div>
+
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__paragraph">All rights reserved.<br>
+                Designed by Wojciech Bylica Arts</p>
+        </footer>
+
+    </div>
 </body>
 
 </html>

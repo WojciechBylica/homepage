@@ -24,10 +24,10 @@
     margin-top: 10px;
 }
 
-.table__Row:nth-child(even) {
+.table__row:nth-child(even) {
     background: rgba(128, 128, 128, 0.396);
 }
 
-.table__Row:hover {
+.table__row:hover {
     background: rgb(219, 129, 152);
 }

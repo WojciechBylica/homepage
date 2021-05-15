@@ -3,11 +3,25 @@
         console.log("Hello!");
     };
 
+    const toggleBackgroundColor = () => {
+        const date = new Date();
+        const hour = date.getHours()
+        console.log(hour);
+        let body = document.body;
+
+
+        if (hour < 6 || hour > 19) { 
+           return body.classList.toggle("body--night");
+        };
+
+
+    };
+
     const showArtsDegree = (masterOfArts) => {
         const title = document.querySelector(".js-title");
         masterOfArts.classList.toggle("changeTitle");
         const masterOfArtsShowed = masterOfArts.classList.contains("changeTitle");
-        masterOfArts.innerText = masterOfArtsShowed ? "ukryj tytuł naukowy" : "wyświetl tytuł naukowy";
+        masterOfArts.innerText = masterOfArtsShowed ? "ukryj tytuł naukowy" : "tytuł naukowy";
         title.innerText = masterOfArtsShowed ? "mgr Wojciech Bylica" : "Wojciech Bylica";
     };
 
@@ -21,12 +35,13 @@
 
 
     const changeVisibilityOfGallery = () => {
-        const header = document.querySelector(".header");
-        header.classList.toggle("header--change");
+        const header = document.querySelector(".container");
+        header.classList.toggle("container--change");
     }
 
     init = () => {
         welcome();
+        toggleBackgroundColor();
 
         const buttonBackgroundChange = document.querySelector(".js-buttonBackgroundChange");
         buttonBackgroundChange.addEventListener("click", changeVisibilityOfGallery);
