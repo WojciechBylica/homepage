@@ -27,6 +27,7 @@ html {
     background-image: url("../images/IMG_0125.jpeg");
     background-position: center;
     background-attachment: fixed;
+    z-index: -1000;
 }
 .container--change {
 
