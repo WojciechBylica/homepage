@@ -28,7 +28,7 @@
         const galleryButtonText = document.querySelector(".js-galleryButtonText");
         const gallery = document.querySelector(".js-gallery");
         gallery.classList.toggle("section__gallery--hidden");
-        galleryButtonText.innerText = gallery.classList.contains("section__gallery--hidden") ? "wyświetlić" : "ukryć";
+        galleryButtonText.innerText = gallery.classList.contains("section__gallery--hidden") ? "wyświet" : "ukryj";
     };
 
 
@@ -42,13 +42,45 @@
         photos.forEach((photo) => {
             photo.classList.toggle("section__gallery--big");
             const gallerySizeButtonText = document.querySelector(".js-gallerySizeButtonText");
-            gallerySizeButtonText.innerText = photo.classList.contains("section__gallery--big") ? "pomniejszyć" : "powiększyć";
+            gallerySizeButtonText.innerText = photo.classList.contains("section__gallery--big") ? "pomniejsz" : "powiększ";
         });
     }
+
+    const array = [
+        {
+            content: "../images/IMG_5420.jpeg"
+        },
+        {
+            content: "../images/IMG_4024.jpeg"
+        },
+        {
+            content: "../images/IMG_5336.jpeg"
+        }
+    ]
+
+    let index = 0;
+    const togglePhotos = () => {
+        const photosCount = array.length;
+        console.log(photosCount);
+        if (index === photosCount) {
+            index = 0;
+        }
+        let htmlString = "";
+        htmlString += `
+        <img class="section__gallery" src="${array[(index)].content}">
+        `
+
+        document.querySelector(".js-gallery").innerHTML = htmlString;
+        index++;
+    };
 
     init = () => {
         welcome();
         toggleBackgroundColor();
+        togglePhotos()
+
+        const togglePhotoButton = document.querySelector(".js-togglePhotoButton");
+        togglePhotoButton.addEventListener("click", togglePhotos);
 
         const sizeButton = document.querySelector(".js-sizeButton");
         sizeButton.addEventListener("click", changeSizeOfGallery);

@@ -20,7 +20,6 @@ html {
 .body--night {
     background-color: black;
     color: rgb(214, 207, 207);
-
 }
 
 .container {
@@ -28,7 +27,7 @@ html {
     background-position: center;
     background-attachment: fixed;
 }
-.container--change {
 
+.container--change {
     background-image: url("../images/IMG_543.jpg");
 }

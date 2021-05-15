@@ -48,6 +48,7 @@
     width: 50%;
     padding: 20px 0px;
 }
+
 .section__gallery--big {
     width: 100%;
 }
@@ -60,9 +61,30 @@
     overflow: auto;
 }
 
+.section__button {
+    font-size: 15px;
+    border: 2px solid rgb(219, 129, 152);
+    color: rgb(238, 232, 232);
+    text-decoration: none;
+    padding: 10px 10px;
+    background-color: rgb(219, 129, 152);
+    text-align: center;
+    border-radius: 2px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.section__button:hover {
+    background-color: rgb(209, 87, 117);
+}
+
+.section__button:active {
+    background-color: rgb(204, 59, 96);
+}
+
 .section__link {
-    color: rgb(8, 6, 6);
-    background: white;
+    color: rgb(238, 232, 232);
+    background-color: rgb(219, 129, 152);
     Text-decoration: none;
     Padding: 5px;
     border-radius: 40px;
@@ -75,8 +97,7 @@
 }
 
 .section__link:hover {
-    background-color: rgb(219, 129, 152);
-    color: rgb(8, 6, 6);
+    background-color: rgb(209, 87, 117);
 }
 
 .section__link:focus {
