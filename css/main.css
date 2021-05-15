@@ -24,10 +24,19 @@
 .main__article {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
     
+}
+
+@media(max-width:767px) {
+    .media__article {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
 }
 
 .main__photo {
     max-width: 200px;
+    flex-shrink: 0;
 }
