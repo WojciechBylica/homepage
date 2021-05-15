@@ -13,8 +13,6 @@
         if (hour < 6 || hour > 19) {
             return body.classList.toggle("body--night");
         };
-
-
     };
 
     const showArtsDegree = (masterOfArts) => {
@@ -39,9 +37,19 @@
         header.classList.toggle("container--change");
     }
 
+    const changeSizeOfGallery = () => {
+        const photos = document.querySelectorAll(".section__gallery");
+       photos.forEach((photo) => {
+        photo.classList.toggle("section__gallery--big");
+    });
+    }
+
     init = () => {
         welcome();
         toggleBackgroundColor();
+
+        const sizeButton = document.querySelector(".js-sizeButton");
+        sizeButton.addEventListener("click", changeSizeOfGallery);
 
         const buttonBackgroundChange = document.querySelector(".js-buttonBackgroundChange");
         buttonBackgroundChange.addEventListener("click", changeVisibilityOfGallery);

@@ -45,8 +45,11 @@
 }
 
 .section__gallery {
-    width: 100%;
+    width: 50%;
     padding: 20px 0px;
+}
+.section__gallery--big {
+    width: 100%;
 }
 
 .section__gallery--hidden {
