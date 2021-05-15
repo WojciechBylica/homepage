@@ -7,9 +7,7 @@
     padding: 25px 20px;
     margin: 0px;
     display: flex;
-    flex-basis:200px;
-    
-    
+    flex-basis: 200px;
 }
 
 .main__header {
@@ -24,15 +22,15 @@
 .main__article {
     display: flex;
     justify-content: space-around;
-    
 }
 
 @media(max-width:767px) {
-    .media__article {
+    .main__article {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
-        align-items: stretch;
+        align-items: center;
     }
 }
 
