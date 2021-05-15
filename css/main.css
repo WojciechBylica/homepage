@@ -30,7 +30,4 @@
 
 .main__photo {
     max-width: 200px;
-    width: 40%;
-    display:flex;
-    flex-shrink: 0;
 }
