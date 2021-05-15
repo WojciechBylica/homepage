@@ -39,9 +39,11 @@
 
     const changeSizeOfGallery = () => {
         const photos = document.querySelectorAll(".section__gallery");
-       photos.forEach((photo) => {
-        photo.classList.toggle("section__gallery--big");
-    });
+        photos.forEach((photo) => {
+            photo.classList.toggle("section__gallery--big");
+            const gallerySizeButtonText = document.querySelector(".js-gallerySizeButtonText");
+            gallerySizeButtonText.innerText = photo.classList.contains("section__gallery--big") ? "pomniejszyć" : "powiększyć";
+        });
     }
 
     init = () => {
