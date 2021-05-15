@@ -48,13 +48,13 @@
 
     const array = [
         {
-            content: "../images/IMG_5420.jpeg"
+            content: "/../images/galleryPhoto1.jpeg"
         },
         {
-            content: "../images/IMG_4024.jpeg"
+            content: "/../images/galleryPhoto2.jpeg"
         },
         {
-            content: "../images/IMG_5336.jpeg"
+            content: "/../galleryPhoto3.jpeg"
         }
     ]
 
