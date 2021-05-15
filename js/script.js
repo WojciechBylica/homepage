@@ -3,6 +3,22 @@
         console.log("Hello!");
     };
 
+    const supports = () => {
+        const d = document.documentElement;
+        const c = "ontouchstart" in window || navigator.msMaxTouchPoints;
+        if (c) {
+            d.className += " touch";
+            return {
+                touch: true
+            }
+        } else {
+            d.className += " no-touch";
+            return {
+                touch: false
+            }
+        }
+    }
+
     const toggleBackgroundColor = () => {
         const date = new Date();
         const hour = date.getHours()
@@ -10,8 +26,8 @@
         let body = document.body;
 
 
-        if (hour < 6 || hour > 19) { 
-           return body.classList.toggle("body--night");
+        if (hour < 6 || hour > 19) {
+            return body.classList.toggle("body--night");
         };
 
 
@@ -42,6 +58,7 @@
     init = () => {
         welcome();
         toggleBackgroundColor();
+        supports();
 
         const buttonBackgroundChange = document.querySelector(".js-buttonBackgroundChange");
         buttonBackgroundChange.addEventListener("click", changeVisibilityOfGallery);
