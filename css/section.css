@@ -26,8 +26,9 @@
     box-shadow: 1px 2px 5px black;
 }
 
-.section__unorderedList--importantText {
-    color: rgb(202, 31, 100)
+.section__importantText {
+    color: rgb(238, 232, 232);
+    text-shadow: 1px 2px 6px rgb(219, 129, 152);
 }
 
 .section__unorderedList {
