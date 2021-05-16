@@ -61,7 +61,6 @@
     let index = 0;
     const togglePhotos = () => {
         const photosCount = array.length;
-        console.log(photosCount);
         if (index === photosCount) {
             index = 0;
         }
