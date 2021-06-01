@@ -5,9 +5,6 @@ My homepage.
 [Homepage](https://wojciechbylica.github.io/homepage/)
 ## URL:
 https://wojciechbylica.github.io/homepage/
-
-## preview:
-![Page preview](images/homepagePreviewVer1.gif)
  ### About Me:
  - drummer
  - percussionist
@@ -23,6 +20,7 @@ https://wojciechbylica.github.io/homepage/
 - html
 - BEM
 - ES6+
+- Flex
 
 ### Contact:
 wojtekbyl@gmail.com
