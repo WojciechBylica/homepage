@@ -48,13 +48,16 @@
 
     const array = [
         {
-            content: "images/galleryPhoto1.jpeg"
+            content: "images/galleryPhoto1.jpeg",
+            description: "Wojciech Bylica with cajon",
         },
         {
-            content: "images/galleryPhoto2.jpeg"
+            content: "images/galleryPhoto2.jpeg",
+            description: "Wojciech Bylica in jazz club",
         },
         {
-            content: "images/galleryPhoto3.jpeg"
+            content: "images/galleryPhoto3.jpeg",
+            description: "Wojciech Bylica face zoom",
         }
     ]
 
@@ -66,7 +69,7 @@
         }
         let htmlString = "";
         htmlString += `
-        <img class="section__gallery" src="${array[(index)].content}">
+        <img class="section__gallery" src="${array[(index)].content}" alt="${array[(index)].description}">
         `
 
         document.querySelector(".js-gallery").innerHTML = htmlString;
