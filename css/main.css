@@ -35,7 +35,6 @@
 }
 
 .main__photo {
-    max-width: 200px;
-    max-height: 300px;
-    flex-shrink: 0;
+    width: 200px;
+    height: 300px;
 }
